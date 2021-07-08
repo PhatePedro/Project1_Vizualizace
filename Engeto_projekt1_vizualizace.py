@@ -64,7 +64,7 @@ elif text_num.isnumeric():
     if int(text_num) >= 1 and int(text_num) <= 3:
         text_num = int(text_num)
         print(oddelovac2)
-        print(f"You choose text number {str(text_num)}.")
+        print(f"You chose text number {str(text_num)}.")
         print(f"The selected text is:\n{TEXTS[text_num-1]}")
     else:
         print(f"Number must be between 1 and {len(TEXTS)}. End app!")
