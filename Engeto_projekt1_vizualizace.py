@@ -25,23 +25,23 @@ other freshwater genera and herring similar to those
 in modern oceans. Other fish such as paddlefish, 
 garpike and stingray are also present.''']
 
-# Pomocné
+# Pomocne
 oddelovac1 = 80 * "="
 oddelovac2 = 80 * "-"
 uvitani = "Welcome to the app,"
 
-# Uživatelé
+# Uzivatele
 users = {'bob': '123', 'ann': 'pass123', 'mike': 'password123', 'liz': 'pass123'}
 
 print(oddelovac2)
 print("Please, log in.")
 print(oddelovac2)
 
-# Vstupní_data_uživatele
+# Vstupni_data_uzivatele
 user = input("Username: ")
 heslo = input("Password: ")
 
-# Ověření jména a hesla
+# Overeni_jmena_a_hesla
 if users.get(user) == heslo:
     print(oddelovac2)
     print(uvitani, user.title())
@@ -50,7 +50,7 @@ else:
           "Please check your credentials and try again.")
     exit()
 
-# Vstupní_data_pro_analýzu
+# Vstupni_data_pro_analyzu
 print(f"We have {len(TEXTS)} texts to be analyzed.")
 print(oddelovac2)
 text_num = input(f"Enter a number btw. 1 and {len(TEXTS)} to select: ")
@@ -107,7 +107,7 @@ print(f"There are {str(total_lower)} lowercase words.")
 print(f"There are {str(total_numeric)} numeric strings.")
 print("The sum of all the numbers: ", str(total_sum))
 
-#vysledek LEN|  OCCURENCES  | NR
+#vysledek_LEN_grafu
 delka = {}
 for i in cl_word:
     delka[(len(i))] = delka.setdefault((len(i)), 0) + 1
