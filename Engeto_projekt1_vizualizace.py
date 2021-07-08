@@ -119,10 +119,10 @@ for i in delka.keys():
     klice.sort()
 
 print(oddelovac2)
-print("LEN".rjust(5), "|", "OCCURENCES".ljust(20),"|", "NR.")
+print("LEN".rjust(5), "|", "OCCURENCES".ljust(25),"|", "NR.")
 print(oddelovac2)
 for j in klice:
-    print(str(j).rjust(5), "|", ("*" * delka.get(j)).ljust(20),"|", delka.get(j))
+    print(str(j).rjust(5), "|", ("*" * delka.get(j)).ljust(25),"|", delka.get(j))
 print(oddelovac2)
 
 
