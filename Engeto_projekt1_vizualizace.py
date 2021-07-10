@@ -75,9 +75,11 @@ else:
 
 ch_text = TEXTS[text_num-1]
 cl_word = []
+znak = ' .,;/:"!? '
 
 for word in ch_text.split():
-    cl_word.append(word.strip('.,;/:"!?'))
+    if word not in znak:
+        cl_word.append(word.strip('.,;/:"!?'))
 
 #analyza_textu
 total_words = len(cl_word)
